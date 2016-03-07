@@ -4,38 +4,45 @@
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+      <script src="https://use.fonticons.com/82a3c785.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="css/style.css">
       <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Juankboards - Front End Developer</title>    
   </head>
   <body>
-    <div class="container">
-      <div class="header">        
-        <h1>JK</h1>
-        <h2>Front End Developer</h2>
+    <div id="wrapper" class="container">
+      <div class="header">   
+        <div class="tittle-container">
+          <div class="header-tittle">
+            <h1>JK</h1>
+            <h4>Front End Developer</h4>
+          </div>
+        </div>             
+        <div class="options clearfix">
+          <div class="option-container about"><h3 class="option">A<br>B<br>O<br>U<br>T</h3></div>
+          <div class="option-container resume"><h3 class="option">R<br>E<br>S<br>U<br>M<br>E</h3></div>
+          <div class="option-container projects"><h3 class="option">P<br>R<br>O<br>J<br>E<br>C<br>T<br>S</h3></div>
+        </div>
         <div id="contact">
-          <a href="https://www.twitter.com/juankboards" target="_blank"><img src="img/twitter_icon.png" alt="twitter circle icon"></a>
-          <a href="https://www.github.com/juankboards" target="_blank"><img src="img/github_icon.png" alt="github circle icon"></a>
-          <a href="https://www.linkedin.com/in/juan-carlos-ruiz-912184111" target="_blank"><img src="img/linkedin_icon.png" alt="linkedin circle icon"></a>    
-          <a href="mailto:juankboards@gmail.com" target="_blank"><img src="img/at_icon.png" alt="at circle icon"></a>
-        </div>
-        <div class="options clearfix highlight">
-          <h3 class="option about">ABOUT</h3>
-          <h3 class="option resume">RESUME</h3>
-          <h3 class="option work">WORKS</h3>            
-        </div>
+          <div class="icon-container"><a class="icon" href="https://www.twitter.com/juankboards" target="_blank"><i class="fa fa-twitter"></i></a></div>
+          <div class="icon-container"><a class="icon" href="https://www.github.com/juankboards" target="_blank"><i class="fa fa-github"></i></a></div>
+          <div class="icon-container"><a class="icon" href="https://www.linkedin.com/in/juan-carlos-ruiz-912184111" target="_blank"><i class="fa fa-linkedin"></i></a>  </div>  
+          <div class="icon-container"><a class="icon" href="mailto:juankboards@gmail.com" target="_blank"><i class="fa fa-envelope-square"></i></a></div>
+        </div>        
       </div>
-      <div id="about">
-        <h1>Hello world, I'm JuanKboards</h1>
-        <p>I'm a passionate and self taught front end developer based in NYC currently studying Full Stack Development at Free Code Camp.
-         <br><br>My specialities include: HTML5, CSS3, JavaScript (Angular, jQuery, Node, Etc), python and Ruby. I try to be language-agnostic and concentrate in find an optimum and beautiful solution.<br><br>Beside that, I’m a music addict, amateur pianist,
-          world pizza-eating champion, devoted husband and future daddy. I hope you’ll enjoy your time in this website as I enjoyed making it.<br><br> Currently I'm looking for a job opportunity and available to be part of interting projects and collaborations.       
+      <div id="about" class="content">
+        <h1>Hello world<br>I'm JuanKboards</h1>
+        <p>I'm a passionate and self taught front end developer based in NYC-NJ, currently studying Full Stack Development at Free Code Camp and willing to start soon at Flatiron School Learn Verified program.
+         My specialties includes: HTML5, CSS3, JavaScript (Angular, jQuery, Node, Etc), Python and Ruby. I try to be language-agnostic and concentrate in find an optimum and beautiful solution.<br><br>Beside that, I’m a music addict, amateur pianist,
+          world pizza-eating champion, devoted husband and future daddy. I hope you’ll enjoy your time in this website as I enjoyed making it.<br><br> Currently I'm looking for a job opportunity and available to be part of interesting projects and collaborations.       
         </p>
       </div>
-      <div id="resume">
+      <div id="resume" class="content">
         
       </div>
-      <div id="work">
+      <div id="work" class="contain">
         <h1>Work</h1>  
         <div class="row">
           <div class="col-md-6 examples-img">
