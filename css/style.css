@@ -19,11 +19,13 @@ h1, h4{
 	cursor: default;
 }
 
+/* Navigation side-bar*/
+
 .header{
 	float: left;
 	width: 20%;
 	height: 100%;
-	border-right: 1px solid #AAA;
+	border-right: 1px solid #FFF;
 }
 
 .tittle-container{
@@ -88,18 +90,18 @@ h1, h4{
 	background-color: #3598DB;	
 }
 
-.option-container{
-	display: table;
-	float: left;
-	width: 33.33%;
-	height: 100%;
-	cursor: pointer;
-}
-
 .icon-container{
 	display: table;
 	float: left;
 	width: 25%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.option-container{
+	display: table;
+	float: left;
+	width: 33.33%;
 	height: 100%;
 	cursor: pointer;
 }
@@ -121,15 +123,36 @@ h1, h4{
 	font-size: 2em;
 	color: #FFF;
 }
- 
 
-#about p{
-	font-size: 1.5em; 
-	text-align: justify;
-	padding-top: 20px;
+/* Content*/
+
+.content-container{
+	float: left;
+	width: 80%;
+	height: 100%;
+	/*background-image: url("https://goo.gl/Ukg2k3");*/
+	background-size: cover;
 }
 
-#resume, #work{
+.about-text{
+	color: #FFF;
+}
+
+#about h1{
+	font-size: 2.5em;
+}
+
+#about p{
+	font-size: 1.6em; 
+	text-align: justify;
+	padding: 100px;
+}
+
+#about{
+	background-color: rgba(0,0,0,0.8);	
+}
+
+#about, #work{
 	display: none;
 }
 
@@ -137,14 +160,18 @@ h1, h4{
 .highlight{
 }
 
+.resume-container{
+	width: 100%;
+	height: 100%;
+}
+
 .examples{
 	height: 100%;
 }
 
 .content{
-	float: left;
-	padding: 15px;
-	width: 75%;
+	height: 100%;	
+	width: 100%;
 }
 
 #work h1{
