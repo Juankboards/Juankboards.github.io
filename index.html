@@ -9,6 +9,8 @@
       <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="css/style.css">
       <link href="css/bootstrap.min.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+      <script src="js/main.js"></script>
     <title>Juankboards - Front End Developer</title>    
   </head>
   <body>
@@ -21,9 +23,9 @@
           </div>
         </div>             
         <div class="options clearfix">
-          <div class="option-container about"><h3 class="option">A<br>B<br>O<br>U<br>T</h3></div>
-          <div class="option-container resume"><h3 class="option">R<br>E<br>S<br>U<br>M<br>E</h3></div>
-          <div class="option-container projects"><h3 class="option">P<br>R<br>O<br>J<br>E<br>C<br>T<br>S</h3></div>
+          <div class="option-container about-option"><h3 class="option">A<br>B<br>O<br>U<br>T</h3></div>
+          <div class="option-container resume-option"><h3 class="option">R<br>E<br>S<br>U<br>M<br>E</h3></div>
+          <div class="option-container projects-option"><h3 class="option">P<br>R<br>O<br>J<br>E<br>C<br>T<br>S</h3></div>
         </div>
         <div id="contact">
           <div class="icon-container"><a class="icon" href="https://www.twitter.com/juankboards" target="_blank"><i class="fa fa-twitter"></i></a></div>
@@ -33,7 +35,7 @@
         </div>        
       </div>
       <div class="content-container">
-        <div id="about" class="content">
+        <div  class="about content">
           <div class="about-text">
             <h1>Hello world<br>I'm Juankboards</h1>
             <p><br>I'm a passionate and self taught front end developer based in NYC-NJ, currently studying Full Stack Development at Free Code Camp and willing to start soon at Flatiron School Learn Verified program.
@@ -42,56 +44,78 @@
             </p>
           </div>
         </div>
-        <div id="resume" class="content">
-          <iframe class="resume-container" src="https://drive.google.com/file/d/0B-v-LGQzrfBBemd6dmRPWW1aRW8/preview"></iframe>
+        <div class="resume content">
+          <iframe id="resume-container" src="https://drive.google.com/file/d/0B-v-LGQzrfBBTm93azhwUzExQVU/preview" style="border:0"</iframe>></iframe>
         </div>
-        <div id="work" class="content">
-          <h1>Work</h1>  
-          <div class="row">
-            <div class="col-md-6 examples-img">
-              <img src="img/casa.png" alt="" class="img-responsive example-img">
+        <div class="work content">
+          <div class="work-container">
+            <div class="img-container ">
+              <img id="twitch-img" src="https://goo.gl/q2O7Df" alt="" class= "img-responsive">
             </div>
-            <div class="col-md-6 examples-text">
-              <h1>Twitch Project</h1>
-              <p>A twitch feed that show the status of a preload batch of channels and let you search for any channel, game or streaming.
-              <br>Technologies: HTML5, CSS3, JavaScript, jQuery, bootstrap, Google maps and Open Weather APIs, JSON
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 examples-img">
-              <img src="img/casa.png" alt="" class="img-responsive example-img">
-            </div>
-            <div class="col-md-6 examples-text">
-              <h1>Twitch Project</h1>
-              <p>A twitch feed that show the status of a preload batch of channels and let you search for any channel, game or streaming.
-              <br>Technologies: HTML5, CSS3, JavaScript, jQuery, bootstrap, Google maps and Open Weather APIs, JSON
-              </p>
+            <div class="work-text">
+              <div class="example-text-container">
+                <div class="examples-text">
+                  <h1>Twitch Project</h1>
+                  <p>A twitch feed that show the status of a preload batch of channels and let you search for any channel, game or streaming.<br>
+                  <br>o Technologies: HTML5, CSS3, JavaScript, jQuery, twitch API, JSON
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 examples-img">
-              <img src="img/casa.png" alt="" class="img-responsive example-img">
+
+          <div class="work-container">
+            <div class="img-container">
+              <img id="pomodoro-img" src="https://goo.gl/ISYPTR" alt="" class="img-responsive">
             </div>
-            <div class="col-md-6 examples-text">
-              <h1>Twitch Project</h1>
-              <p>A twitch feed that show the status of a preload batch of channels and let you search for any channel, game or streaming.
-              <br>Technologies: HTML5, CSS3, JavaScript, jQuery, bootstrap, Google maps and Open Weather APIs, JSON
-              </p>
+            <div class="work-text">
+              <div class="example-text-container">
+                <div class="examples-text">
+                  <h1>Pomodoro Clock</h1>
+                  <p>A pomodoro clock app that help you to break down the work time into intervals showing you different gifs and phrases to motivate you.<br>
+                  <br>Technologies: HTML5, CSS3, JavaScript, jQuery, bootstrap
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 examples-img">
-              <img src="img/casa.png" alt="" class="img-responsive example-img">
+
+          <div class="work-container">
+            <div class="img-container">
+              <img id="wiki-img" src="https://goo.gl/x5Dpr4" alt="" class="img-responsive">
             </div>
-            <div class="col-md-6 examples-text">
-              <h1>Twitch Project</h1>
-              <p>A twitch feed that show the status of a preload batch of channels and let you search for any channel, game or streaming.
-              <br>Technologies: HTML5, CSS3, JavaScript, jQuery, bootstrap, Google maps and Open Weather APIs, JSON
-              </p>
+            <div class="work-text">
+              <div class="example-text-container">
+                <div class="examples-text">
+                  <h1>Wikipedia Search</h1>
+                  <p>A web application which let you make a search in Wikipedia and shows you a list of results.<br>
+                  <br>Technologies: HTML5, CSS3, JavaScript, jQuery, WikiMedia API, JSON
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>  
-        </div>    
+          </div>
+
+          <div class="work-container">
+            <div class="img-container">
+              <img id="weather-img" src="https://goo.gl/5IWXOs" alt="" class="img-responsive">
+            </div>
+            <div class="work-text">
+              <div class="example-text-container">
+                <div class="examples-text">
+                  <h1>Local Weather </h1>
+                  <p>A weather app that shows the weather and location of your and any city in the world.<br>
+                  <br>Technologies: HTML5, CSS3, JavaScript, jQuery, bootstrap, Google maps and Open Weather APIs, JSON
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
       </div>      
     </div><!--container-fluid -->
  
