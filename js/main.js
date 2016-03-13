@@ -11,8 +11,7 @@ $(document).ready(function(){
 					show = ".about";
 					break;
 				case "resume-option":
-					$(show).css("display","none");
-					.content-container{
+					$(show).css("display","none");					
 					$(".resume").css("display", "block");
 					show = ".resume";
 					break;
